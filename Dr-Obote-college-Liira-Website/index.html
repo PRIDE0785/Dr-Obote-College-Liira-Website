@@ -1,0 +1,246 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DR. OBOTE COLLEGE BORORO-LIRA</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    .container img{
+      border-radius: 10px;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('blessings.jpg') no-repeat center center / cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: black;
+      padding: 0 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      padding: 12px 25px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 200px;
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #004080;
+      font-weight: 600;
+    }
+
+    .about,
+    .events {
+      background: white;
+      padding: 40px 0;
+    }
+
+    .table{
+       display:grid;
+	grid-template-columns:repeat(3,1fr);
+	gap:40px;
+	padding:40px
+    }
+    .group{
+	background:#f0f0f0;
+	padding:40px;
+	border:5px solid #ccc;
+	border-radius:10px;
+    }
+    .title{
+	font-weight:bold;
+	margin-bottom:10px;
+	font-size:30px;
+	color:black;
+    }
+    .content{
+       font-size:20px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+      .responsive-table {
+        display: none;
+      }
+
+      .responsive-block {
+        display: block;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .responsive-block h3 {
+        margin-bottom: 10px;
+        color: #004080;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+ <img src="badge.jpg" width="100px" height="100px" align="center"></img>    
+ <div class="logo">DR. OBOTE COLLEGE BORORO- LIRA</div>
+     <nav>
+        <ul>
+          <li><a href="contact.HTML">Contacts</a></li>
+          <li><a href="staff profile.html">Staff profile</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero"style="background-image:url(blessings.jpg); background-size:cover; background-repeat:no repeat; background-position:center;">
+    <div class="hero-text">
+      <h1>Welcome to Dr.Obote College Bororo-Lira</h1>
+      <p>Shaping young minds through knowledge, discipline, and creativity.</p>
+      
+    </div>
+  </section>
+
+ 
+  <section class="container">
+    <h2 class="section-title">Our Core Values</h2>
+
+    <table class="responsive-table" id="infoTable">
+    <div class="table">
+     <div class="group">
+      <div class="title">MOTTO</div>
+      <div class="content"> Fear not the truth</div>
+    </div>
+     <div class="group">
+       <div class="title">MISSION</div>
+       <div class="content">To nurture academic excellence, leadership and responsible citizenship in every learner.</div>
+     </div>
+     <div class="group">
+        <div class="title">VISION</div>
+        <div class="content">To become a leading institution fostering innovation, values, and holistic education.</div>
+      </div>
+     </div>
+    </table>
+
+    <!-- Block-style version for small screens -->
+    <div class="responsive-block" id="infoBlocks"></div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">About Our School</h2>
+      <p>Dr.Obote College, located in lira district, is a prestigious boys' secondary school known for academic excellence, and leadership development.<br>
+          We offer a rich curriculum, experienced staff, and modern facilities for holistic growth.</p>
+    
+</div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events">
+    <div class="container">
+      <h2 class="section-title">Upcoming Events</h2>
+      <ul>
+        <li><strong>May 25:</strong> Term Two Begins</li>
+        <li><strong>June 15:</strong> Parent-Teacher Meeting</li>
+        <li><strong>July 20:</strong>Visitation day</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dr. Obote College Bororo|Bororo parish, Lira district |<br>| +256770557706| drobotecollege@gmail.com | Follow us on <i class="fa fa-twitter"></i> <i class="fa fa-facebook"></i> <i class="fa fa-linkedin"></i></p>
+    </div>
+  </footer>
+
+</body>
+</html>

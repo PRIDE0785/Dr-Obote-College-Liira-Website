@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>University Education FAQ | Seeta University</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="contact-info">
+      <span>📧 info@doc.ac.ug</span>
+      <span>📞 (+256) 392 984328</span>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <img src="school-budge2.webp">
+    <div class="logo">Dr. Obote College</div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="staff profile.html">ABOUT DOC</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="contact.HTML">CONTACTS</a></li>
+      <li><a href="contact.HTML">ADMISSIONS</a></li>
+    </ul>
+    <a href="#" class="apply-button">APPLY</a>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Seconadry Education FAQ</h1>
+      <p><a href="#">Home</a> &nbsp;—&nbsp; FAQ</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <input type="text" id="faq-search" placeholder="Search FAQs...">
+
+    <div class="tabs">
+      <button class="tab active" data-tab="admissions">Admissions</button>
+      <button class="tab" data-tab="programs">Academic Programs</button>
+      <button class="tab" data-tab="scholarships">Bursaries</button>
+      <button class="tab" data-tab="campus">College Life</button>
+    </div>
+
+    <div class="tab-content active" id="admissions">
+      <div class="faq-item">
+        <h3 class="faq-question">How do I apply to Dr.Obote College, Boroboro?</h3>
+        <p class="faq-answer">Visit our admissions page and complete the online application form. You can also apply in person at our main campus. Located at the Hill in Boroboro, Lira City East Division?</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What documents are required?</h3>
+        <p class="faq-answer">You will need your previous academic assessment( reports), Parent National ID/passport, and a completed Medicial form.</p>
+      </div>
+    </div>
+
+    <div class="tab-content" id="programs">
+      <div class="faq-item">
+        <h3 class="faq-question">Which Combinations are offered?</h3>
+        <p class="faq-answer">We offer Both science and Arts combinations with an expirence of better teachers.</p>
+        <p class="faq-answer">Our goal is to help every student to achieve their dream.</p>
+      </div>
+    </div>
+
+    <div class="tab-content" id="scholarships">
+      <div class="faq-item">
+        <h3 class="faq-question">Are scholarships/Bursaries available?</h3>
+        <p class="faq-answer">Yes, DOC offers merit-based and need-based bursaries. See our financial aid office for eligibility.</p>
+      </div>
+    </div>
+
+    <div class="tab-content" id="campus">
+      <div class="faq-item">
+        <h3 class="faq-question">What is College life like?</h3>
+        <p class="faq-answer">College life includes clubs, sports, events, and student leadership opportunities. We strive to make learning engaging and fun.</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="#" class="floating-apply">✏ APPLY</a>
+
+  <script>
+    // Tab toggle
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Accordion behavior
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('open');
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // FAQ search
+    document.getElementById('faq-search').addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase();
+      document.querySelectorAll('.tab-content.active .faq-item').forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
